@@ -1,0 +1,12 @@
+<svg class="main-header__logo__icon" width="60px" height="28px" viewBox="0 0 60 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g fill-rule="nonzero" fill="#FFFFFF">
+                  <rect id="Rectangle-path" x="0" y="0" width="4" height="28"></rect>
+                  <rect id="Rectangle-path" x="8" y="0" width="4" height="28"></rect>
+                  <rect id="Rectangle-path" x="16" y="0" width="4" height="28"></rect>
+                  <rect id="Rectangle-path" x="24" y="0" width="4" height="28"></rect>
+                  <rect id="Rectangle-path" x="32" y="24" width="28" height="4"></rect>
+                  <rect id="Rectangle-path" x="32" y="16" width="28" height="4"></rect>
+                  <rect id="Rectangle-path" x="32" y="8" width="28" height="4"></rect>
+                  <rect id="Rectangle-path" x="32" y="0" width="28" height="4"></rect>
+                </g>
+              </svg>
