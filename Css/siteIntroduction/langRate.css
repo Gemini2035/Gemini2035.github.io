@@ -1,0 +1,58 @@
+.lang-box{
+    height: 150px;
+}
+
+.lang-rate-box{
+    width: 75%;
+    margin: 0 auto;
+    height: 12px;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.lang-rate-box span{
+    height: 100%;
+    display: inline-block;
+    transform: translateY(-55%);
+    transition: 0.6s ease-in-out;
+}
+
+.lang-rate-box span:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+.lang-explanation-box{
+    width: 80%;
+    margin-top: 15px;
+    margin-left: auto;
+}
+
+.lang-explanation-box>div{
+    width: 33.33%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.lang-explanation-box>div.isChoosen{
+    animation: choosenMove 1.5s infinite;
+}
+
+@keyframes choosenMove {
+    50% { opacity: 0.3;}       
+}
+
+.lang-explanation-box>div>div{
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+}
+
+.lang-explanation-box>div>span{
+    margin-left: 10px;
+}

@@ -1,0 +1,136 @@
+.background.study{
+    background-image: var(--study-background);
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.container{
+    min-width: 900px;
+    width: 99vw;
+    min-height: 600px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.aside-menu{
+    flex: 0.06;
+    transition: 0.6s ease-in-out;
+    max-width: 75px;
+}
+
+.aside-menu:hover{
+    flex: 0.23;
+    max-width: 250px;
+}
+
+.aside-menu:hover .menu-detail{
+   opacity: 1;
+}
+
+.aside-menu ul{
+    margin-top: 3px;
+    list-style: none;
+    padding-left: 3px;
+    display: flex;
+    flex-direction: column;
+    height: 66%;
+}
+
+.aside-menu li{
+    flex: 2;
+    margin-bottom: 10px;
+    position: relative;
+    border-top: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    max-height: 60px;
+}
+
+.aside-menu li:hover{
+    background-color: #c0c0c0;
+    cursor: pointer;
+}
+
+.aside-menu li.active{
+    background-color: #c0c0c0;
+}
+
+.aside-menu img{
+    height: 100%;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+.menu-detail{
+    font-weight: bold;
+    font-size: 27px;
+    position: absolute;
+    width: 500px;
+    margin-left: 5px;
+    margin-top: 7px;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.verify-box{
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex: 1;
+    position: relative;
+    height: 80vh;
+    border-left: 3px solid;
+    border-top-left-radius: 10px;
+    margin-left: 10px;
+}
+
+.verify-item{
+    margin: 15px;
+    margin-left: 5px;
+    height: 100px;
+    transition: 0.6s ease-in-out;
+    background-color: #c0c0c0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.7;
+    position: relative;
+    box-shadow: 5px 3px 1px #808080;
+}
+
+.verify-item:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.verify-item.hidden{
+    margin: 0;
+    opacity: 0;
+    height: 0;
+    border: none;
+    padding: 0;
+}
+
+.verify-item img{
+    height: 100%;
+    width: auto;
+}
+
+.verify-item h1{
+    display: inline;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.verify-item div{
+    position: absolute;
+    right: 1%;
+    top: 30%
+}
+
+.verify-item div p{
+    margin: 1px;
+}

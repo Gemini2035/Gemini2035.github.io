@@ -1,0 +1,84 @@
+.tool-box{
+    height: 1700px;
+}
+
+.tool-item{
+    width: 95%;
+    margin: 0 auto 25px auto;
+    display: flex;
+    height: 250px;
+    border-radius: 20px;
+    transition: 0.6s ease-in-out;
+    min-width: 1160px;
+}
+
+.tool-item:hover{
+    background-color: #444;
+    opacity: 0.5;
+}
+
+.tool-item>img{
+    height: 100px;
+    width: auto;
+    margin: auto;
+}
+
+.tool-item>img:hover{
+    cursor: pointer;
+}
+
+.tool-item div{
+    height: 95%;
+    overflow: hidden;
+    width: calc(90% - 13px);
+    border-left: 3px solid;
+    margin: auto 0 auto 10px;
+    padding-top: 10px;
+    cursor: default;
+    
+}
+
+.tool-item div h1{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.tool-item div h3{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.tool-item div h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tool-item div p{
+    margin-top: 3px;
+    border-top: 1px solid;
+    width: 99%;
+    height: 64%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.tool-item div p img{
+    height: 25px;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+.tool-item div p a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.tool-item div p a:hover{
+    text-decoration: underline;
+    cursor: pointer;   
+}
