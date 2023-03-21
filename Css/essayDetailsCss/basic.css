@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../../Assets/study.jpeg);
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.main-container{
+    width: 60vw;
+    min-width: 200px;
+    height: 95vh;
+    min-height: 300px;
+    margin: auto;
+    margin-top: 2.5vh;
+    border: 3px solid;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 15px 15px #808080;
+}
+
+.main-container {
+    font-size: 24px;
+}
+
+.main-container :hover{
+    cursor: pointer;
+}
+
+.main-container a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container a:hover{
+    text-decoration: underline;
+}
