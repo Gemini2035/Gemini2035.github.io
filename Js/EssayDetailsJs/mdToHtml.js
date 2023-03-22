@@ -7,9 +7,9 @@ const coreFunction = url => {
       res.text()
       .then(text => {
          const converter = new Markdown.Converter();
-         const html = converter.makeHtml(text); 
-         console.log(html)
-         document.getElementById('markDownArea').innerHTML = html;
+         const htmlContent = converter.makeHtml(text); 
+         console.log(htmlContent)
+         document.getElementById('markDownArea').innerHTML = htmlContent;
      })
     })
 }
