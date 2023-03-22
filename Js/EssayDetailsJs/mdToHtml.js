@@ -1,4 +1,4 @@
-const param = new URLSearchParams(window.location.search);
+// const param = new URLSearchParams(window.location.search);
 const targetUrl = '../MarkDown/' + param.get('id') + '.md';
 
 const coreFunction = url => {
@@ -9,7 +9,7 @@ const coreFunction = url => {
          const converter = new Markdown.Converter();
          const htmlContent = converter.makeHtml(text); 
          console.log(htmlContent)
-         document.getElementById('markDownArea').innerHTML = htmlContent;
+         document.getElementById('markdownArea').innerHTML = htmlContent;
      })
     })
 }

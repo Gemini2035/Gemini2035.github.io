@@ -16,7 +16,7 @@ fetch('../Json/contentJson/studyEssayList.json')
         const img = document.createElement('img');
         img.setAttribute('src', '../Assets/defaultImg.svg');
         div.appendChild(img);
-        // 创建h1写入标题并将其加入div中国呢
+        // 创建h1写入标题并将其加入div
         const h = document.createElement('h1');
         h.innerHTML = everyEssay.title;
         div.appendChild(h);
@@ -33,7 +33,11 @@ fetch('../Json/contentJson/studyEssayList.json')
         div.appendChild(subDiv);
         // 为每个div设置跳转行为
         div.addEventListener('click', () => {
-            window.open('essayDetails.html?id=' + everyEssay.id);
+            const targetUrl = ('essayDetails.html?title=' + everyEssay.title
+                                + '&pubdate=' + everyEssay.pubdate
+                                + '&classify=' + everyEssay.classify
+                                + '&id=' + everyEssay.id);
+            window.open(targetUrl, '_blank');
         })
         // 将构建好的div放入box中
         verifyBox.appendChild(div);
@@ -53,14 +57,6 @@ fetch('../Json/contentJson/studyEssayList.json')
             }
         })
     })
-
-    // 设置点击跳转行为
-    // verifyItems.forEach(everyItem => {
-    //     everyItem.addEventListener('click', () => {
-    //         window.open('essayDetails.html?id=' + (everyItem.querySelector('h1')))
-    //     })
-    // })
-
 }))
 
 // 优化建议，尽量想办法优化为Css样式调整

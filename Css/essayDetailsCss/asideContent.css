@@ -1,0 +1,10 @@
+.aside-content{
+    text-align: right;
+    width: 25vw;
+    height: 225px;
+    margin-top: 2vh;
+    border-radius: 15px;
+    border: 1px solid;
+    border-left: none;
+    padding-right: 10px;
+}

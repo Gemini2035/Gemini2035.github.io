@@ -1,3 +1,5 @@
+// src="http://cdn.bootcss.com/pagedown/1.0/Markdown.Converter.js"
+
 var Markdown;
 
 if (typeof exports === "object" && typeof require === "function") // we're in a CommonJS (e.g. Node.js) module
