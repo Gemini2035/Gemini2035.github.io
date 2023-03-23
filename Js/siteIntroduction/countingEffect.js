@@ -1,5 +1,5 @@
 // 后期考虑通过读取json设置文件来设置起始日期
-const startDate = '2002.06.04';
+const startDate = '2023.03.20';
 const counter = document.querySelector('.title-and-time>span>span');
 
 const dateToNow = date => {

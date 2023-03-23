@@ -73,17 +73,16 @@
     min-width: 250px;
     flex: 1;
     height: 90%;
-    /* background-color: #808080; */
     margin-right: 10px;
     border: 1px solid;
     border-radius: 10px;
     padding: 10px;
     transition: 0.6s ease-in-out;
     position: relative;
-    /* 需要用js设置背景图片 */
-    background: url('../../Assets/defaultPhoto.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
 }
 
 .scroll-item:hover{
@@ -93,15 +92,56 @@
     opacity: 0.9;
 } 
 
-.scroll-item:hover>h3{
-    opacity: 0.9;
+.scroll-item.animation img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
-.scroll-item h3{
-    position: absolute;
-    bottom: -10px;
-    opacity: 0;
-    transition: 0.6s ease-in-out;
+.scroll-item.animation .description{
+    z-index: 1;
+    width: 100%;
+}
+
+.scroll-item.animation .description h2{
+    height: 20%;
+    border-bottom: 1px solid;
+}
+
+.arg-content.animation .description p{
+    width: 100%;
+    padding: 3px;
+    text-indent: 2em;
+    height: calc(80% - 1px);
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scroll-item.game img{
+    margin: auto;
+    width: 25%;
+    height: auto;
+}
+
+.scroll-item.game .description{
+    margin: auto;
+    width: calc(80% - 3px);
+    border-left: 3px solid;
+    height: 95%;
+    padding-left: 5px;
+}
+
+.scroll-item.game .description h2{
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+.scroll-item.game .description h3{
+    margin-top: 0; 
 }
 
 .text-chooser{
