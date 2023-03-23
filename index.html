@@ -106,21 +106,27 @@
 
     texts[2].classList.add('rtl');
 
+    let speed1 = 50;
+    let speed2 = 15;
+    let speed3 = 30;
+
     const Timer = setInterval(() => {
         //part1自动滚动行为
-        texts[0].scrollLeft += 50; // speed = 50
-        if (texts[0].scrollLeft > texts[0].scrollWidth - 2000) { fetchFunc(0); }
+        texts[0].scrollLeft += speed1; // speed = 50
+        if (texts[0].scrollLeft > texts[0].scrollWidth - 2000) { fetchFunc(0);}
         //part2自动滚动行为
-        texts[1].scrollLeft += 15; // speed = 15
+        texts[1].scrollLeft += speed2; // speed = 15
         if (texts[1].scrollLeft > texts[1].scrollWidth - 2000) { fetchFunc(1); }
-        texts[2].scrollLeft -= 30; // speed = 30
-        if (texts[2].scrollLeft < 1000){ fetchFunc(2); }
+        texts[2].scrollLeft -= speed3; // speed = 30
+        if (texts[2].scrollLeft < -(texts[2].scrollWidth - 1500)){ fetchFunc(2); }
     }, 60);
 
     setTimeout(() => {
         document.querySelector('.alert-page').classList.add('active');
-        clearInterval(Timer);
-    }, 5000)
+        speed1 = 10;
+        speed2 = 5;
+        speed3 = 10;
+    }, 10000)
     // 负责页面的跳转
     document.querySelector('.alert-page').addEventListener('click', () => { window.location.href = 'Views/mainViews.html'; })
 </script>
