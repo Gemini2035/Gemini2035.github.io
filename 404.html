@@ -3,4 +3,131 @@
 permalink: /404.html
 
 ---
-<h1>Hold</h1>
+<!-- 主要负责错误界面设置 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error!</title>
+</head>
+
+<body>
+    <div class="text-container">
+        <div class="text-group"></div>
+    </div>
+    <div class="text-container">
+        <div class="text-group"></div>
+    </div>
+    <div class="text-container">
+        <div class="text-group rtl"></div>
+    </div>
+    <div class="alert-page">
+        <div class="alert-info">
+            <p>点击任意处以继续</p>
+            <p>Press any to continue...</p>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica", "Arial", sans-serif;
+        color: #fff;
+        background-color: #000;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .text-container {
+        height: calc(33.33vh - 15px);
+        overflow-y: hidden;
+    }
+
+    .text-group {
+        height: 33.33vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        font-size: 175px;
+        white-space: nowrap;
+    }
+
+    .text-group.rtl{
+        direction: rtl;
+    }
+
+    .alert-page{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(135, 206, 250, 0.9);
+        z-index: -100;
+        opacity: 0;
+        transition: 0.6s ease-in-out;
+    }
+
+    .alert-page.active{
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .alert-page.active:hover{
+        cursor: pointer;
+    }
+
+    .alert-page .alert-info{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+</style>
+<script type="text/javascript">
+    const texts = document.querySelectorAll('.text-group');
+    const fetchFunc = (index) => {
+        fetch('Json/contentJson/errorFont.json')
+            .then(res => res.json()
+                .then(text => {
+                    oldText = texts[index].innerHTML;
+                    if (index == texts.length - 1) {
+                        text = text.split('').reverse().join('');
+                    }
+                    oldText += text;
+                    texts[index].innerHTML = oldText;
+                }))
+    }
+
+    fetchFunc(0);
+    fetchFunc(1);
+    fetchFunc(2);
+
+    texts[2].classList.add('rtl');
+
+    const Timer = setInterval(() => {
+        //part1自动滚动行为
+        texts[0].scrollLeft += 50; // speed = 50
+        if (texts[0].scrollLeft > texts[0].scrollWidth - 2000) { fetchFunc(0); }
+        //part2自动滚动行为
+        texts[1].scrollLeft += 15; // speed = 15
+        if (texts[1].scrollLeft > texts[1].scrollWidth - 2000) { fetchFunc(1); }
+        texts[2].scrollLeft -= 30; // speed = 30
+        if (texts[2].scrollLeft < 1000){ fetchFunc(2); }
+    }, 60);
+
+    setTimeout(() => {
+        document.querySelector('.alert-page').classList.add('active');
+        clearInterval(Timer);
+    }, 10000)
+    // 负责页面的跳转
+    document.querySelector('.alert-page').addEventListener('click', () => { window.history.go(-1); })
+</script>
+
+</html>
