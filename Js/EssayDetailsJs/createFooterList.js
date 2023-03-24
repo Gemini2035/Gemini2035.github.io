@@ -10,7 +10,7 @@ const inverseDic = {
 // const categoriesDic = ['error', 'web', 'py', 'c&cpp', 'swiftUI', 'others'];
 
 // fetch文件后生成li
-fetch('../Json/contentJson/studyEssayList.json')
+fetch('../Json/ConfigJson/studyEssayList.json')
 .then(res => {res.json()
 .then(essays => {
     essays.forEach(everyEssay => {

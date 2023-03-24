@@ -1,0 +1,15 @@
+[
+    {
+        "name": "这是动漫标题1",
+        "img": "",
+        "description": "这是动漫简介1",
+        "state": "seen"
+    },
+
+    {
+        "name": "这是动漫标题2",
+        "img": "",
+        "description": "这是动漫简介2",
+        "state": "favor"
+    }
+]

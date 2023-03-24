@@ -91,27 +91,41 @@
     transform: translate(3px, 3px);
     opacity: 0.9;
 } 
+.scroll-item.animation-and-reality{
+    overflow: hidden;
+}
 
-.scroll-item.animation img{
+.scroll-item.animation-and-reality img{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 0;
+    transition: 0.6s ease-in-out;
 }
 
-.scroll-item.animation .description{
+.scroll-item.animation-and-reality:hover img{
+    opacity: 0.6;
+}
+
+.scroll-item.scroll-item.animation-and-reality:hover .description{
+    margin-top: 0;
+}
+
+.scroll-item.animation-and-reality .description{
     z-index: 1;
     width: 100%;
+    transition: 0.6s ease-in-out;
+    margin-top: 100%;
 }
 
-.scroll-item.animation .description h2{
+.scroll-item.animation-and-reality .description h2{
     height: 20%;
     border-bottom: 1px solid;
 }
 
-.arg-content.animation .description p{
+.arg-content.animation-and-reality .description p{
     width: 100%;
     padding: 3px;
     text-indent: 2em;

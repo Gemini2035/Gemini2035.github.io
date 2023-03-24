@@ -93,7 +93,7 @@ permalink: /404.html
 <script type="text/javascript">
     const texts = document.querySelectorAll('.text-group');
     const fetchFunc = (index) => {
-        fetch('Json/contentJson/errorFont.json')
+        fetch('Json/ContentJson/errorFont.json')
             .then(res => res.json()
                 .then(text => {
                     oldText = texts[index].innerHTML;

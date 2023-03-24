@@ -4,7 +4,7 @@ const verifyBox = document.querySelector('#verifyBox');
 const selectors = document.querySelectorAll('.aside-menu ul li');
 const categoriesDic = ['error', 'web', 'py', 'c&cpp', 'swiftUI', 'others'];
 
-fetch('../Json/configJson/studyEssayList.json')
+fetch('../Json/ConfigJson/studyEssayList.json')
  .then(res => res.json()
  .then(essays => {
     // 为每一篇文章创建概括图

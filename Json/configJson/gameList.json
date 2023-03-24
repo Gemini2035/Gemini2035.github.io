@@ -1,0 +1,26 @@
+[
+    {
+        "name": "游戏1",
+        "img": "",
+        "description": "描述1",
+        "classify": "pc"
+    },
+    {
+        "name": "游戏2",
+        "img": "",
+        "description": "描述2",
+        "classify": "mobile"
+    },
+    {
+        "name": "游戏3",
+        "img": "",
+        "description": "描述3",
+        "classify": "master"
+    },
+    {
+        "name": "游戏4",
+        "img": "",
+        "description": "描述4",
+        "classify": "pc"
+    }
+]
