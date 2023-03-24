@@ -1,0 +1,43 @@
+.account-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.account-box div{
+    flex: 0 0 calc(33.33% - 22px);
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+    height: 15vh;
+    min-height: 100px;
+    max-height:200px;
+    min-width: 100px;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.account-box div img{
+    height: 90%;
+    width: auto;
+    margin-bottom: 100%;
+    transition: 0.6s ease-in-out;
+}
+
+.account-box div:hover{
+    cursor: pointer;
+}
+
+.account-box div.isHover img{
+    margin-bottom: 0;
+    height: 45%;
+    width: auto;
+}
+
+.account-box div p{
+    font-weight: bold;
+    margin: 0;
+}

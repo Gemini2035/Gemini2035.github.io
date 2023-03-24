@@ -1,0 +1,34 @@
+#content1 p{
+    text-indent: 2em;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+
+.tags-box{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.tags-box::-webkit-scrollbar{
+    display: none;
+}
+
+.tags-box span{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 50px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-color: #808080;
+    transition: 0.6s ease-in-out;
+}
+
+.tags-box span:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

@@ -1,0 +1,28 @@
+.footer-area{
+    width: 99vw;
+    display: flex;
+    border-top: 1px solid;
+    min-height: 100px;
+    padding-right: 2vw;
+    background-color: rgba(50%, 50%, 50%, 0.5);
+    margin: auto;
+}
+
+.footer-item{
+    margin-top: 0;
+    font-size: 25px;
+    width: 25%;
+    text-align: right;
+}
+
+.footer-item li{
+    font-size: 20px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.footer-item li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.8;
+}

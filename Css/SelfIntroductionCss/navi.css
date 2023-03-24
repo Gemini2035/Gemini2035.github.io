@@ -1,0 +1,23 @@
+.listing{
+    margin-top: 10vh;
+    flex: 0.25;
+    max-width: 250px;
+    text-align: right;
+    padding: 1%;
+    color: #808080;
+    border-radius: 20px;
+    border-top: 1px solid;
+}
+
+.listing a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 15px;
+    font-size: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+.listing a:hover{
+    transform: translateX(-10px);
+}
