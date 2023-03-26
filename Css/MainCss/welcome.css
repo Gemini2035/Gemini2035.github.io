@@ -1,6 +1,6 @@
 /* 这里是首页相关的样式 */
 .background.main{
-    background-image: var(--main-background);
+    background-image: url('../../Assets/BackgroundImgs/mainBackground.webp'), url('../../Assets/BackgroundImgs/mainBackground.jpeg');
     background-size: cover;
     opacity: 0.3;
 }

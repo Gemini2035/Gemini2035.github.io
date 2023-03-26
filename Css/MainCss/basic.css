@@ -1,9 +1,4 @@
 /* mainView.html中基本的样式，包括重复使用的、父类元素的 */
-:root{
-    --main-background: url('../../Assets/mainBackground.jpeg');
-    --daily-life-background: url('../../Assets/dailyLifeBackground.jpeg');
-    --study-background: url('../../Assets/study.jpeg');
-}
 
 *{
     box-sizing: border-box;

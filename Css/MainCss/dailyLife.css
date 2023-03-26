@@ -1,5 +1,5 @@
 .background.daily-life{
-    background-image: var(--daily-life-background);
+    background-image: url('../../Assets/BackgroundImgs/dailyLifeBackground.webp'), url('../../Assets/BackgroundImgs/dailyLifeBackground.jpeg');
     background-size: cover;
     opacity: 0.5;
 }

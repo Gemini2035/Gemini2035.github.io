@@ -1,5 +1,5 @@
 .background.study{
-    background-image: var(--study-background);
+    background-image: url('../../Assets/BackgroundImgs/study.webp'), url('../../Assets/BackgroundImgs/study.jpeg');
     background-size: cover;
     opacity: 0.3;
 }
