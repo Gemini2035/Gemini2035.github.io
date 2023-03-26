@@ -33,12 +33,14 @@ const isScrollEnd = () => {
   position2 = document.documentElement.scrollTop || document.body.scrollTop;
   if(position2 == position1){
     let index = Math.floor(position2 / viewHeight);
-    if(down && cd){
-        focus = index>1? 2 : (index + 1);
-        scrollBehavior();
-    } else {
-        focus = index;
-        basicAreas[focus].scrollIntoView({ behavior: 'smooth' });
+    if(cd){
+        if(down){
+            focus = index>1? 2 : (index + 1);
+            scrollBehavior();
+        } else {
+            focus = index;
+            scrollBehavior();
+        }
     }
   }
 }
@@ -46,6 +48,6 @@ const isScrollEnd = () => {
 const scrollBehavior = () => {
     cd = false;
     basicAreas[focus].scrollIntoView({ behavior: 'smooth' });
-    setTimeout(() => { cd = true; console.log('111')}, 2000);
+    setTimeout(() => { cd = true; }, 2000);
 }
 
