@@ -1,0 +1,11 @@
+/* 应该能兼容目前市面上的大部分浏览器 */
+
+*{
+    /* 适用于gecko内核的浏览器 */
+    scrollbar-width: none;
+}
+
+/* 使用于webkit内核的浏览器 */
+*::-webkit-scrollbar{
+   display: none;
+}

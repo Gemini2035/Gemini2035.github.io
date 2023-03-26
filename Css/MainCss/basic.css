@@ -15,6 +15,7 @@ body{
     padding: 0;
     font-family: "Helvetica", "Arial", sans-serif;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .basicArea{
@@ -78,7 +79,7 @@ body{
 .en-gloss{
     font-size: 32px;
     margin-left: 10px;
-    margin-top: -6vh;
+    margin-top: -4vh;
     font-style: italic;
 }
 
