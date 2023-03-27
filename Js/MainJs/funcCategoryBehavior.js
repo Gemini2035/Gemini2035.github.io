@@ -15,11 +15,11 @@ funces.forEach((everyFunc, index) => {
                 break;
             case 2:
                 focus = 1;
-                basicAreas[focus].scrollIntoView({ behavior: 'smooth' });
+                scrollBehavior();
                 break;
             case 3:
                 focus = 2;
-                basicAreas[focus].scrollIntoView({ behavior: 'smooth' });
+                scrollBehavior();
                 break;
         }
     })
