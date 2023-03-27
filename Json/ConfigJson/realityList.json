@@ -3,7 +3,7 @@
         "name": "照片1",
         "img": "",
         "breif": "这是简述1",
-        "details": "这是详细描述1",
+        "details": "../Json/ContentJson/PhotoDetailsJson/testPhotoText.json",
         "shotDate": "2020-09-06",
         "classify": "school"
     },

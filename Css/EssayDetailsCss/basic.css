@@ -18,7 +18,7 @@ body{
     top: 0;
     left: 0;
     z-index: -1;
-    background-image: url(../../Assets/BackgroundImgs/mainBackground.webp), url(../../Assets/BackgroundImgs/study.jpeg);
+    background-image: url('../../Assets/BackgroundImgs/study.webp'), url('../../Assets/BackgroundImgs/study.jpeg');
     background-size: cover;
     opacity: 0.3;
 }

@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #fff;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('../../Assets/BackgroundImgs/dailyLifeBackground.webp'), url('../../Assets/BackgroundImgs/dailyLifeBackground.jpeg');
+    background-size: cover;
+    opacity: 0.3;
+}
+
+@media (min-width: 800px) {
+    .main-container{
+        width: 90vw;
+        height: 80vh;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        transition: 0.9s ease-in-out;
+        background-color: rgba(128, 128, 128, 0.9);
+        box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .main-container.init{
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    .photo-container{
+        height: 90%;
+        width: 75%;
+        border-radius: 10px;
+        text-align: center;
+    } img{
+        height: 100%;
+        width: auto;
+    }
+
+    .photo-container img:hover{
+        cursor: pointer;
+    }
+
+    .description{
+        width: calc(25% - 10px);
+        margin-left: 5px;
+        border-left: 3px solid;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+        padding-left: 10px;
+        cursor: default;
+    } .details{
+        height: 75%;
+        text-indent: 2em;
+        word-wrap: break-word;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .description footer{
+        margin-top: 0;
+    } p{
+        margin: 0;
+    }
+
+}
