@@ -15,11 +15,11 @@ funces.forEach((everyFunc, index) => {
                 break;
             case 2:
                 focus = 1;
-                scrollBehavior();
+                if(cd){ scrollBehavior(); }
                 break;
             case 3:
                 focus = 2;
-                scrollBehavior();
+                if(cd){ scrollBehavior(); }
                 break;
         }
     })

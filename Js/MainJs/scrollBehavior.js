@@ -21,7 +21,7 @@ document.onscroll = () => {
 // resize监听
 window.onresize = () => {
     viewHeight = document.body.clientHeight / 3
-    basicAreas[focus].scrollIntoView({ behavior: 'smooth' });
+    if(cd){ scrollBehavior(); }
 }
 
 arrows[1].addEventListener('click', () => {
