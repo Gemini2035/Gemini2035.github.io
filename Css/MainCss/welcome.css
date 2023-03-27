@@ -71,6 +71,7 @@
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -15px;
     padding-left: 75px;
     transition: 0.6s ease-in-out;
 }
@@ -81,7 +82,8 @@
 }
 
 .func-category:hover>div{
-    margin: 20px;
+    margin: 15px;
+    box-shadow: 3px 3px #696969;
 }
 
 .func-category div{
@@ -92,7 +94,7 @@
     border: 2px solid #000;
     border-radius: 50px;
     background-color: #c0c0c0;
-    box-shadow: 10px 10px #696969;
+    box-shadow: 8px 8px #696969;
     align-items: center;
     opacity: 0.7;
     transition: 0.6s ease-in-out;
