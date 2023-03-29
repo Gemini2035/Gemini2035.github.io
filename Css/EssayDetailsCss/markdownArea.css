@@ -21,12 +21,12 @@
 }
 
 .markdown-area::-webkit-scrollbar-thumb{
-    background-color: #000;
+    background-color: #808080;
     border-radius: 5px;
 }
 
 .markdown-area::-webkit-scrollbar-track{
-    background-color: #808080;
+    background-color: transparent;
     border-radius: 5px;
 }
 

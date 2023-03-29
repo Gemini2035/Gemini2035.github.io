@@ -1,14 +1,14 @@
 [
     {
         "title": "Css随记",
-        "pubdate": "2020-10-15",
+        "pubdate": "2022-07",
         "classify": "web",
         "id": "noteOfCss"
     },
     {
-        "title": "Html随记",
-        "pubdate": "2020-10-17",
+        "title": "关于居中的方法",
+        "pubdate": "2023-03-39",
         "classify": "web",
-        "id": "noteOfHtml"
+        "id": "noteOfCenterLayout"
     }
 ]

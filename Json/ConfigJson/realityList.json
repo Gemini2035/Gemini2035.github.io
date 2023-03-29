@@ -1,42 +1,10 @@
 [
     {
-        "name": "照片1",
-        "img": "",
-        "breif": "这是简述1",
-        "details": "../Json/ContentJson/PhotoDetailsJson/testPhotoText.json",
-        "shotDate": "2020-09-06",
-        "classify": "school"
-    },
-    {
-        "name": "照片2",
-        "img": "",
-        "breif": "这是简述2",
-        "details": "这是详细描述2",
-        "shotDate": "2020-09-06",
+        "name": "无题",
+        "img": "IMG_0640.jpg",
+        "breif": "半路停车，拍摄风景",
+        "details": "../Json/ContentJson/PhotoDetailsJson/tourOfMo.json",
+        "shotDate": "2020-08-13",
         "classify": "faraway"
-    },
-    {
-        "name": "照片3",
-        "img": "",
-        "breif": "这是简述3",
-        "details": "这是详细描述3",
-        "shotDate": "2020-09-06",
-        "classify": "faraway"
-    },
-    {
-        "name": "照片4",
-        "img": "",
-        "breif": "这是简述4",
-        "details": "这是详细描述4",
-        "shotDate": "2020-09-06",
-        "classify": "school"
-    },
-    {
-        "name": "照片5",
-        "img": "",
-        "breif": "这是简述5",
-        "details": "这是详细描述5",
-        "shotDate": "2020-09-06",
-        "classify": "school"
     }
 ]

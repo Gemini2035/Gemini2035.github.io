@@ -10,7 +10,8 @@ fetch('../Json/ConfigJson/realityList.json')
         // 为每个动漫创建浏览图，设置图片并将其插入到总div后面
         const img = document.createElement('img');
         if(everyPhoto.img){
-            img.setAttribute('src', everyPhoto.img);
+            url = '../Assets/PhotosAndIcons/Photos/' + everyPhoto.img
+            img.setAttribute('src', url);
         } else {
             img.setAttribute('src', '../Assets/PhotosAndIcons/defaultPhoto.svg');
         }

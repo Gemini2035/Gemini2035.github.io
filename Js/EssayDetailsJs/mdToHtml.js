@@ -12,6 +12,9 @@ const coreFunction = url => {
          document.getElementById('markdownArea').innerHTML = htmlContent;
      })
     })
+    .catch(() => {
+        document.getElementById('markdownArea').innerHTML = '啊啦～文章内容获取失败了！';
+    })
 }
 
 coreFunction(targetUrl);

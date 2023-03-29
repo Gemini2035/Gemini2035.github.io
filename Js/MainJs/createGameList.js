@@ -7,10 +7,16 @@ fetch('../Json/ConfigJson/gameList.json')
         // 为每个游戏创建总div，赋予类名
         const div = document.createElement('div');
         div.setAttribute('class', 'scroll-item game');
+        // 为每个游戏div创建监听事件
+        div.addEventListener('click', () => {
+            url = (everyGame['webUrl']? everyGame['webUrl'] : ('https://zh.moegirl.org.cn/index.php?title=' + everyGame['name']));
+            window.open(url, '_blank');
+        })
         // 为每个游戏创建img并设置icon，后将其插入div中
         const img = document.createElement('img');
         if(everyGame.img){
-            img.setAttribute('src', everyGame.img);
+            url = '../Assets/PhotosAndIcons/GameIcons/' + everyGame.img
+            img.setAttribute('src', url);
         } else {
             img.setAttribute('src', '../Assets/PhotosAndIcons/defaultPhoto.svg');
         }
@@ -23,6 +29,8 @@ fetch('../Json/ConfigJson/gameList.json')
         const hr = document.createElement('hr');
         const h3 = document.createElement('h3');
         h2.innerHTML = everyGame.name;
+        // 如果游戏标题过长，使用小号字体
+        if((everyGame.name).length > 5){ h2.classList.add('smaller'); }
         hr.setAttribute('width', '100%');
         h3.innerHTML = everyGame.description;
         subDiv.appendChild(h2);
