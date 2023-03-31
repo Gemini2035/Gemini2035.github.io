@@ -16,5 +16,11 @@
         "pubdate": "2023-03-30",
         "classify": "web",
         "id": "noteOfHTML5"
+    },
+    {
+        "title": "http/https的几种常用状态码",
+        "pubdate": "2023-3-31",
+        "classify": "others",
+        "id": "noteOfStateCode"
     }
 ]
