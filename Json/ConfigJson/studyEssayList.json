@@ -22,5 +22,11 @@
         "pubdate": "2023-3-31",
         "classify": "others",
         "id": "noteOfStateCode"
+    },
+    {
+        "title": "js垃圾回收",
+        "pubdate": "2023-04-01",
+        "classify": "web",
+        "id": "noteOfJunkCollection"
     }
 ]
