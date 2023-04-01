@@ -18,7 +18,7 @@
         "id": "noteOfHTML5"
     },
     {
-        "title": "http/https的几种常用状态码",
+        "title": "常用状态码",
         "pubdate": "2023-3-31",
         "classify": "others",
         "id": "noteOfStateCode"
@@ -28,5 +28,11 @@
         "pubdate": "2023-04-01",
         "classify": "web",
         "id": "noteOfJunkCollection"
+    },
+    {
+        "title": "页面布局",
+        "pubdate": "2023-04-01",
+        "classify": "web",
+        "id": "noteOfDisplay"
     }
 ]
