@@ -40,11 +40,11 @@ fetch('../Json/ConfigJson/gameList.json')
         div.appendChild(subDiv);
         // 根据分类将其插入对应gameLists中
         if(everyGame.classify == 'mobile'){
-            gameLists[0].appendChild(div);
+            gameLists[0].insertBefore(div, gameLists[0].children[0]);
         } else if(everyGame.classify == 'pc'){
-            gameLists[1].appendChild(div);
+            gameLists[1].insertBefore(div, gameLists[1].children[0]);
         } else if(everyGame.classify == 'master'){
-            gameLists[2].appendChild(div);
+            gameLists[2].insertBefore(div, gameLists[2].children[0]);
         }
     })
 })})

@@ -40,7 +40,8 @@ fetch('../Json/ConfigJson/studyEssayList.json')
             window.open(targetUrl, '_blank');
         })
         // 将构建好的div放入box中
-        verifyBox.appendChild(div);
+        // verifyBox.appendChild(div);
+        verifyBox.insertBefore(div, verifyBox.children[0]);
     })
 
     // 设置文章分类行为

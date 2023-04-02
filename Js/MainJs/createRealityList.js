@@ -39,9 +39,9 @@ fetch('../Json/ConfigJson/realityList.json')
         div.appendChild(subDiv);
         // 根据不同的分类插入到不同的realityLists中
         if(everyPhoto.classify == 'school'){
-            realityLists[0].appendChild(div);
+            realityLists[0].insertBefore(div, realityLists[0].childern[0]);
         } else if(everyPhoto.classify == 'faraway'){
-            realityLists[1].appendChild(div);
+            realityLists[1].insertBefore(div, realityLists[1].children[0]);
         }
     })
 })})

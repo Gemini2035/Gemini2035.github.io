@@ -36,9 +36,9 @@ fetch('../Json/ConfigJson/animationList.json')
 .then(res => {res.json()
 .then(animations => {
     animations.forEach(everyAnimation => {
-        animationLists[1].appendChild(createDiv(everyAnimation));
+        animationLists[1].insertBefore(createDiv(everyAnimation), animationLists[1].children[0]);
         if (everyAnimation.state == 'favor'){
-            animationLists[0].appendChild(createDiv(everyAnimation));
+            animationLists[0].insertBefore(createDiv(everyAnimation), animationLists[0].children[0]);
         }
     })
 })})
