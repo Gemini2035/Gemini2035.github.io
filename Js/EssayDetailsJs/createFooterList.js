@@ -26,6 +26,6 @@ fetch('../Json/ConfigJson/studyEssayList.json')
             window.open(targetUrl, '_blank');
         });
         // 将li插入对应的分类当中
-        footerList[inverseDic[everyEssay.classify]].appendChild(li);
+        footerList[inverseDic[everyEssay.classify]].insertBefore(li, footerList[inverseDic[everyEssay.classify]].children[0]);
     })
 })})
