@@ -6,16 +6,15 @@
     width: 75%;
     margin: 0 auto;
     height: 12px;
-    /* background-color: red; */
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid;
 }
 
 .lang-rate-box span{
-    height: 100%;
+    height: calc(100% - 1px);
     display: inline-block;
-    transform: translateY(-55%);
+    transform: translateY(-100%);
     transition: 0.6s ease-in-out;
 }
 
