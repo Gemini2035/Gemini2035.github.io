@@ -3,7 +3,7 @@
 ## 水平居中：
 ### 1、text-align: center;
 条件：在没有浮动的情况下<br/>
-设置目标元素display: inline/inline-block,在其副元素设置text-align: center;
+设置目标元素display: inline/inline-block,在其父元素设置text-align: center;
 
 ### 2、margin: 0 auto;
 条件：目标元素有确定的width并且display: block;的块级元素<br/>
