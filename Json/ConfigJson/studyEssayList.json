@@ -46,5 +46,11 @@
         "pubdate": "2023-04-15",
         "classify": "web",
         "id": "noteOfcore"
+    },
+    {
+        "title": "柯里化",
+        "pubdate": "2023-04-17",
+        "classify": "web",
+        "id": "noteOfCurrying"
     }
 ]
