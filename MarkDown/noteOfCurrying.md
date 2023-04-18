@@ -8,5 +8,5 @@
 即不是一次性把所有参数传入
 **作用**: 减少重复传递不变部分的参数
 ### 模版
-![](../Assets/MdImgs/currying.png)
+![](../Assets/MdImgs/currying.png#pic_left=75x75)
 将需要柯里化的函数通过fn传入即可
