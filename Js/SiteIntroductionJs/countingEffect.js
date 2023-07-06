@@ -1,4 +1,4 @@
-// 后期考虑通过读取json设置文件来设置起始日期
+ // 后期考虑通过读取json设置文件来设置起始日期
 const startDate = '2023.03.20';
 const counter = document.querySelector('.title-and-time>span>span');
 
@@ -17,8 +17,7 @@ const incrementingCounter = () => {
 
   const updateCounter = () => {
       const target = +daysDiffer;
-      const c = +counter.innerText
-
+      const c = +counter.innerText;
       const increment = target / 200
 
       if(c < target) {
