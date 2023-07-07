@@ -61,3 +61,5 @@ link中reload用法
 加载资源优先级说明
 1. preload 使用 “as” 属性加载的资源将会获得与资源 “type” 属性所拥有的相同的优先级。比如说，preload as=“style” 将会获得比 as=“script” 更高的优先级
 2. 不带 “as” 属性的 preload 的优先级将会等同于异步请求
+
+## 脚本的执行
