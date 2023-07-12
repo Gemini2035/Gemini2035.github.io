@@ -63,6 +63,18 @@
         "title": "浏览器中的加载与执行",
         "pubdate": "2023-07-05",
         "classify": "web",
-        "id": "noetOfBrowser"
+        "id": "noteOfBrowser"
+    },
+    {
+        "title": "float相关",
+        "pubdate": "2023-07-06",
+        "classify": "web",
+        "id": "noteOfFloat"
+    },
+    {
+        "title": "Bfc详解",
+        "pubdate": "2023-07-07",
+        "classify": "web",
+        "id": "noteOfBfc"
     }
 ]
