@@ -76,5 +76,11 @@
         "pubdate": "2023-07-07",
         "classify": "web",
         "id": "noteOfBfc"
+    },
+    {
+        "title": "Css元素简写",
+        "pubdate": "2023-07-08",
+        "classify": "web",
+        "id": "noteOfBrief"
     }
 ]
