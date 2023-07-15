@@ -6,8 +6,7 @@ const coreFunction = url => {
     .then(res => {
       res.text()
       .then(text => {
-         const converter = new Markdown.Converter();
-         const htmlContent = converter.makeHtml(text); 
+        const htmlContent = marked.parse(text); 
          console.log(htmlContent)
          document.getElementById('markdownArea').innerHTML = htmlContent;
      })
