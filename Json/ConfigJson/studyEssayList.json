@@ -82,5 +82,11 @@
         "pubdate": "2023-07-08",
         "classify": "web",
         "id": "noteOfBrief"
+    },
+    {
+        "title": "type、interface、class",
+        "pubdate": "2023-07-09",
+        "classify": "web",
+        "id": "noteOfTIC"
     }
 ]
