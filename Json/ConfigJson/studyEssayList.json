@@ -88,5 +88,11 @@
         "pubdate": "2023-07-09",
         "classify": "web",
         "id": "noteOfTIC"
+    },
+    {
+        "title": "基本类型和引用类型",
+        "pubdate": "2023-07-10",
+        "classify": "web",
+        "id": "noteOfType"
     }
 ]
