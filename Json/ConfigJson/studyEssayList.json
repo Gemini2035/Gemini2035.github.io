@@ -94,5 +94,11 @@
         "pubdate": "2023-07-10",
         "classify": "web",
         "id": "noteOfType"
+    },
+    {
+        "title": "web图片的使用",
+        "pubdate": "2023-07-11",
+        "classify": "web",
+        "id": "noteOfWebImage"
     }
 ]
