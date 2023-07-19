@@ -100,5 +100,11 @@
         "pubdate": "2023-07-11",
         "classify": "web",
         "id": "noteOfWebImage"
+    }, 
+    {
+        "title": "web图片优化指南",
+        "pubdate": "2023-07-12",
+        "classify": "web",
+        "id": "noteOfImgOptimize"
     }
 ]
