@@ -106,5 +106,11 @@
         "pubdate": "2023-07-12",
         "classify": "web",
         "id": "noteOfImgOptimize"
+    },
+    {
+        "title": "Promise详解",
+        "pubdate": "2023-07-18",
+        "classify": "web",
+        "id": "noteOfPromise"
     }
 ]
