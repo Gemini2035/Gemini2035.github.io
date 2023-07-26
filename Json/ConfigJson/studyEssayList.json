@@ -112,5 +112,11 @@
         "pubdate": "2023-07-18",
         "classify": "web",
         "id": "noteOfPromise"
+    },
+    {
+        "title": "Vue的生命周期",
+        "pubdate": "2023-07-21",
+        "classify": "web",
+        "id": "noteOfVueLife"
     }
 ]
