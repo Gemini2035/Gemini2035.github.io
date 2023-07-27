@@ -118,5 +118,11 @@
         "pubdate": "2023-07-21",
         "classify": "web",
         "id": "noteOfVueLife"
+    },
+    {
+        "title": "Js几种判定类型的方法",
+        "pubdate": "2023-07-25",
+        "classify": "web",
+        "id": "noteOfJsType"
     }
 ]
