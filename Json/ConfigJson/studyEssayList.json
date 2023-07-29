@@ -124,5 +124,11 @@
         "pubdate": "2023-07-25",
         "classify": "web",
         "id": "noteOfJsType"
+    },
+    {
+        "title": "继承与原型链",
+        "pubdate": "2023-07-26",
+        "classify": "web",
+        "id": "noteOfInherite"
     }
 ]
