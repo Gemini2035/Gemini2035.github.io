@@ -130,5 +130,11 @@
         "pubdate": "2023-07-26",
         "classify": "web",
         "id": "noteOfInherite"
+    },
+    {
+        "title": "闭包",
+        "pubdate": "2023-07-27",
+        "classify": "web",
+        "id": "noteOfClosure"
     }
 ]
