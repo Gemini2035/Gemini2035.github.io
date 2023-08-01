@@ -136,5 +136,11 @@
         "pubdate": "2023-07-27",
         "classify": "web",
         "id": "noteOfClosure"
+    },
+    {
+        "title": "数组方法分类",
+        "pubdate": "2023-07-28",
+        "classify": "web",
+        "id": "noteOfArrayFunc"
     }
 ]
